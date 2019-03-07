@@ -35,13 +35,13 @@ workflows:
   commit:
     jobs:
       - build
-  nightly:
-    triggers:
-      - schedule:
-          cron: "0 12,20 * * *"
-          filters:
-            branches:
-              only:
-                - master
-    jobs:
-      - build
+#  nightly:
+#    triggers:
+#      - schedule:
+#          cron: "0 12,20 * * *"
+#          filters:
+#            branches:
+#              only:
+#                - master
+#    jobs:
+#      - build
